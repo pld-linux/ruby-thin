@@ -103,5 +103,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{ruby_vendorarchdir}/thin_parser.so
 
 # rack adapter
+%dir %{ruby_vendorlibdir}/rack/adapter
 %{ruby_vendorlibdir}/rack/adapter/loader.rb
 %{ruby_vendorlibdir}/rack/adapter/rails.rb
