@@ -55,9 +55,9 @@ Documentation for %{name}.
 %prep
 %setup -q -n %{pkgname}-%{version} -a1
 %{__sed} -i -e '1 s,#!.*ruby,#!%{__ruby},' bin/*
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
+%patch -P1 -p1
+%patch -P2 -p1
+%patch -P3 -p1
 
 %build
 cd ext/thin_parser
